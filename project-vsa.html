@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail - Text Normalization for VSA</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #E5E7EB;
+    }
+    .font-anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .content-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <header class="py-6">
+    <div class="container mx-auto px-6">
+      <a href="index.html" class="text-sky-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+
+    <!-- Project Title -->
+    <section class="text-center mb-16">
+      <h1 class="font-anton text-5xl md:text-7xl text-white tracking-tighter">Text Normalization for a VSA</h1>
+      <p class="text-gray-300 text-xl mt-2">Improving Chatbot Accuracy Through Input Handling</p>
+    </section>
+
+    <!-- Overview -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      <div class="lg:col-span-2 content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Project Summary</h2>
+        <p class="text-gray-300">
+          This project addresses a critical challenge in chatbot development: handling inconsistent and "noisy" user input. The focus was on creating a robust text normalization pipeline for a Virtual Smart Assistant (VSA) in an academic context. This involved implementing techniques for typo correction, slang conversion, and noise removal to standardize user queries before they are processed by the NLU model, ultimately aiming to enhance response accuracy.
+        </p>
+      </div>
+      <div class="content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Key Information</h2>
+        <ul class="text-gray-300 space-y-3">
+          <li><strong><i class="fas fa-user-tie w-6"></i> Role:</strong> NLP Developer</li>
+          <li><strong><i class="fas fa-tools w-6"></i> Tools:</strong> Python, Text Preprocessing, Kaggle</li>
+          <li><strong><i class="fas fa-calendar-alt w-6"></i> Duration:</strong> 2025</li>
+          <li><strong><i class="fas fa-link w-6"></i> Links:</strong> 
+            <a href="https://www.kaggle.com/code/ramiftaa/normalization-typo" class="text-sky-400 hover:underline" target="_blank">Kaggle</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="mb-16">
+      <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal1.png"
+           onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal1.png';"
+           alt="A diagram showing the text normalization process from raw input to clean text"
+           class="rounded-lg shadow-2xl w-full">
+    </section>
+
+    <!-- Process -->
+    <section class="mb-16 content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">The Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-comment-dots"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">1. Data Sourcing</h3>
+          <p class="text-gray-300">Utilized datasets from Kaggle containing real-world user queries with common typos, abbreviations, and slang.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-magic"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">2. Noise Removal</h3>
+          <p class="text-gray-300">Implemented functions to strip punctuation, special characters, and extra whitespace from the raw text input.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-spell-check"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">3. Typo Correction</h3>
+          <p class="text-gray-300">Developed a spelling correction module using phonetic algorithms and custom dictionaries for domain-specific terms.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-exchange-alt"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">4. Standardization</h3>
+          <p class="text-gray-300">Created a mapping system to convert common slang and abbreviations (e.g., "info uas" to "informasi ujian akhir semester") into formal language.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">Results & Learnings</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">Key Outcomes</h3>
+          <p class="text-gray-300 mb-4">
+            The project resulted in a reusable Python pipeline capable of transforming raw, messy user queries into clean, standardized text. When tested, this pre-processing step increased the intent recognition accuracy of the downstream NLU model by an estimated 15-20%, significantly reducing misunderstanding and improving the user experience.
+          </p>
+          <h3 class="text-2xl font-bold text-white mb-3">Lessons Learned</h3>
+          <p class="text-gray-300">
+            This project underscored that the performance of an advanced AI model is fundamentally limited by the quality of its input data. I learned that robust text normalization is not just a preliminary step but a critical component for building effective and reliable conversational AI. The main challenge was balancing correction rules to fix errors without altering the user's original intent.
+          </p>
+        </div>
+        <div>
+          <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal2.png"
+               onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal2.png';"
+               alt="A graphic showing text before and after the normalization process"
+               class="rounded-lg shadow-xl w-full">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+      <p>&copy; 2025 Ainur Rahma Miftakhul Rizqi. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mifta - Data Scientist Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark blue-gray background */
+            color: #E5E7EB; /* Light gray text */
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #38bdf8; /* Sky Blue */
+        }
+        .bg-accent {
+            background-color: #38bdf8;
+        }
+        .border-accent {
+            border-color: #38bdf8;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-white">AR.</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-sky-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                    <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+                </div>
+                <a href="#contact" class="hidden md:block bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                    Contact Me
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-40">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+            <a href="#home" class="mobile-menu-link hover:text-sky-400 transition-colors">Home</a>
+            <a href="#about" class="mobile-menu-link hover:text-sky-400 transition-colors">About</a>
+            <a href="#projects" class="mobile-menu-link hover:text-sky-400 transition-colors">Projects</a>
+            <a href="#contact" class="mobile-menu-link hover:text-sky-400 transition-colors">Contact</a>
+        </div>
+    </div>
+
+
+    <main class="container mx-auto px-6">
+
+        <!-- Section 1: Hero -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+                <!-- Text Content -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+                        Hi, I'm Mifta
+                    </h1>
+                    <p class="text-2xl md:text-4xl mt-4 mb-8">
+                        I find solutions through <span id="typewriter" class="accent-color font-semibold"></span>
+                    </p>
+                    <p class="max-w-2xl mx-auto lg:mx-0 text-gray-300 mb-10">
+                        Final-year Informatics Engineering student with a strong focus on Data Science. Passionate about leveraging data to drive impactful and innovative solutions.
+                    </p>
+                    <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 inline-block">
+                        Explore My Work
+                    </a>
+                </div>
+                <!-- Image Content -->
+                <div class="hidden lg:flex justify-center">
+                    <img src="images/IMG_50711.JPEG" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/500x500/111827/E5E7EB?text=Image+Not+Found';"
+                         alt="A portrait of Mifta" 
+                         class="rounded-full shadow-2xl w-3/4 h-auto object-cover aspect-square border-4 border-sky-500/50">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About Me -->
+        <section id="about" class="py-20 lg:py-32">
+            <!-- Top part: Image and About Me text -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1">
+                    <img src="images/DSCF9944.JPG" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x600/111827/E5E7EB?text=Image+Not+Found';"
+                         alt="A portrait of Ainur Rahma" 
+                         class="rounded-2xl shadow-2xl w-full h-auto object-cover aspect-square">
+                </div>
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">About Me</h2>
+                    <p class="text-gray-300 mb-4">
+                        Hello! I'm Ainur Rahma Miftakhul Rizqi (you can call me Mifta), an Informatics Engineering student at Dian Nuswantoro University (GPA 3.81) with a passion for extracting meaningful insights from complex datasets. My journey into data began with a curiosity for patterns and a drive to solve real-world problems through analytical thinking.
+                    </p>
+                    <p class="text-gray-300">
+                        As a recipient of the 2023 Beasiswa Unggulan and selected for the Informatics Honors Class, I have a proven ability to manage academic and research projects with efficiency and collaboration. I currently serve as a Teaching Assistant for Data Science at Bengkel Koding UDINUS.
+                    </p> <br>
+                        <a href="https://drive.google.com/file/d/1PBGMAgYUEF3Y4sbqKTUqjmEmV7b2ScAx/view?usp=sharing"  target="_blank" download="CV_Ainur_Rahma_Miftakhul_Rizqi.pdf" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg text-md transition-transform transform hover:scale-105 inline-block">
+                        <i class="fas fa-download mr-2"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom part: My Skills -->
+            <div class="mt-16 text-center">
+                <h3 class="text-3xl font-bold text-white mb-8">My Skills</h3>
+                <div class="flex flex-wrap gap-4 justify-center max-w-3xl mx-auto">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Data Analysis</span>
+                    <span class="skill-badge">Machine Learning</span>
+                    <span class="skill-badge">Data Mining</span>
+                    <span class="skill-badge">Natural Language Processing</span>
+                    <span class="skill-badge">Data Visualization</span>
+                    <span class="skill-badge">Microsoft Office</span>
+                    <span class="skill-badge">Canva</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects -->
+        <section id="projects" class="py-20 lg:py-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: Publication -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\breast.png" 
+                         onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\breast.png';"
+                         alt="Breast Cancer Prediction project visual" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Breast Cancer Prediction Models</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            Developed a machine learning classification model using Decision Tree to predict whether a tumor is benign or malignant based on historical medical data.
+                        </p> 
+                        <div class="flex justify-between items-center mt-auto">
+                            <a href="project-breast.html" class="text-sky-400 hover:text-sky-300 font-semibold"> View Project <i class="fas fa-file-alt ml-1"></i></a>
+                            <a href="https://github.com/airamifta/breast_cancer_prediction" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\orange1.png" 
+                         onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\orange1.png';"
+                         alt="Orange Quality Classification project visual" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Orange Quality Classification using CNN</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">
+                            Conducted a team project to classify the quality of orange fruits using Convolutional Neural Networks (CNN). Involved in data collection, model building, and final report compilation.
+                        </p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <a href="project-orange.html" class="text-sky-400 hover:text-sky-300 font-semibold"> View Project <i class="fas fa-file-alt ml-1"></i></a>
+                            <a href="https://github.com/airamifta/Machine-Learning-Project" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus1.png" 
+                         onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus1.png';"
+                         alt="Sales Data Analysis project visual" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Corpus on Academic Chatbot</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">A project focused on build corpus and analyzing datasets to FAQ Chatbot using Python.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                           <a href="project-chatbot.html" class="text-sky-400 hover:text-sky-300 font-semibold">View Project<i class="fas fa-file-alt ml-1"></i></a>
+                            <a href="https://github.com/airamifta/chatbot-akademik" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal3.png" 
+                         onerror="this.onerror=null;this.src='https:D:D:\KULIAH MIFTA\berkas magang\Portofolio\images\normal3.png';"
+                         alt="Normalization-Typo-Progress-2" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                       <h3 class="text-xl font-bold text-white mb-2">Text Normalization for VSA</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Focused on text normalization to improve chatbot input handling, including typo correction and noise removal.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                           <a href="project-vsa.html" class="text-sky-400 hover:text-sky-300 font-semibold">View Project on Progress</a>
+                            <a href="https://www.kaggle.com/code/ramiftaa/normalization-typo" target="_blank" class="text-gray-400 hover:text-white"> <i class="fas fa-file-alt ml-1"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 5: House Price Prediction -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\house1.png" 
+                        onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\house1.png';"
+                        alt="House Price Prediction project visual" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">House Price Prediction</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Built a regression model to predict house prices based on various features using machine learning techniques.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                        <a href="project-house.html" class="text-sky-400 hover:text-sky-300 font-semibold">View Project <i class="fas fa-file-alt ml-1"></i></a>
+                            <a href="https://github.com/airamifta/HousePricePrediction" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 6: Glioma Grading Research -->
+                <div class="project-card">
+                    <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (3).png" 
+                        onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (3).png';"
+                        alt="Glioma Grading Research project visual" class="rounded-t-lg aspect-video object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2">Feature Selection for Glioma Grading</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Proposed a multi-strategy feature selection pipeline combining classical and deep learning methods to enhance glioma grading performance.</p>
+                        <div class="flex justify-between items-center mt-auto">
+                        <a href="project-glioma.html" class="text-sky-400 hover:text-sky-300 font-semibold">View Project <i class="fas fa-file-alt ml-1"></i></a>
+                            <!-- <a href="#" target="_blank" class="text-gray-400 hover:text-white"><i class="fab fa-github text-2xl"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4: Contact -->
+        <section id="contact" class="py-20 lg:py-32 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+                I'm currently open to new opportunities and collaborations. Feel free to send me a message, and I'll get back to you as soon as possible!
+            </p>
+            <a href="mailto:airamifta02@gmail.com?subject=Opportunity%20for%20Mifta&body=Hi%20Mifta%2C%0A%0AI%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20potential%20opportunity.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 inline-block">
+                Let's Talk Data
+            </a>
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="mailto:airamifta02@gmail.com?subject=Opportunity%20for%20Mifta&body=Hi%20Mifta%2C%0A%0AI%20saw%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20potential%20opportunity.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D" class="text-gray-400 hover:text-sky-400 transition-colors text-3xl" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/ainur-rahma" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors text-3xl" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/airamifta" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors text-3xl" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/airamifta/" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors text-3xl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Ainur Rahma Miftakhul Rizqi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- JavaScript for interactivity ---
+
+        // 1. Navbar background on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-effect');
+            } else {
+                navbar.classList.remove('glass-effect');
+            }
+        });
+
+        // 2. Typewriter effect
+        const typewriterElement = document.getElementById('typewriter');
+        const words = ['data.', 'insights.', 'solutions.'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+            }
+
+            const typeSpeed = isDeleting ? 100 : 200;
+            setTimeout(type, typeSpeed);
+        }
+        
+        document.addEventListener('DOMContentLoaded', type);
+
+        // 3. Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+        
+        // 4. Custom styles for skill badges and project cards
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .skill-badge {
+                background-color: rgba(56, 189, 248, 0.1);
+                color: #38bdf8;
+                padding: 0.5rem 1rem;
+                border-radius: 9999px;
+                font-size: 0.875rem;
+                font-weight: 500;
+            }
+            .project-card {
+                background-color: #1f2937; /* Gray-800 */
+                border-radius: 0.75rem;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: flex;
+                flex-direction: column;
+            }
+            .project-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+            }
+        `;
+        document.head.appendChild(style);
+
+    </script>
+</body>
+</html>

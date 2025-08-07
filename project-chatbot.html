@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail - Academic Chatbot</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #E5E7EB;
+    }
+    .font-anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .content-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <header class="py-6">
+    <div class="container mx-auto px-6">
+      <a href="index.html" class="text-sky-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+
+    <!-- Project Title -->
+    <section class="text-center mb-16">
+      <h1 class="font-anton text-5xl md:text-7xl text-white tracking-tighter">Corpus on Academic Chatbot</h1>
+      <p class="text-gray-300 text-xl mt-2">An AI-Powered Assistant for Student Queries</p>
+    </section>
+
+    <!-- Overview -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      <div class="lg:col-span-2 content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Project Summary</h2>
+        <p class="text-gray-300">
+          This project focused on developing the foundational components of an AI chatbot tailored for an academic environment. The primary work involved structuring a domain-specific corpus from scratch to enhance the chatbot's Natural Language Understanding (NLU). The main objective was to create a system capable of accurately interpreting and responding to a wide range of student queries, from administrative questions to course-related information.
+        </p>
+      </div>
+      <div class="content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Key Information</h2>
+        <ul class="text-gray-300 space-y-3">
+          <li><strong><i class="fas fa-user-tie w-6"></i> Role:</strong> NLP Developer</li>
+          <li><strong><i class="fas fa-tools w-6"></i> Tools:</strong> Python, NLP, Corpus Development, Google Colab</li>
+          <li><strong><i class="fas fa-calendar-alt w-6"></i> Duration:</strong> 2024</li>
+          <li><strong><i class="fas fa-link w-6"></i> Links:</strong> 
+            <a href="https://github.com/airamifta/chatbot-akademik" class="text-sky-400 hover:underline" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <section class="mb-16">
+      <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus2.png"
+           onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus2.png';"
+           alt="Visualization of the chatbot's corpus structure or NLU pipeline"
+           class="rounded-lg shadow-2xl w-full">
+    </section>
+
+    <!-- Process -->
+    <section class="mb-16 content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">The Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-search"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">1. Domain Research</h3>
+          <p class="text-gray-300">Analyzed common student questions and academic information structures to define the chatbot's scope and required knowledge base.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-book"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">2. Corpus Structuring</h3>
+          <p class="text-gray-300">Designed and built a structured corpus, defining intents (e.g., 'find_schedule'), entities (e.g., 'course_name'), and response patterns.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-brain"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">3. NLU Development</h3>
+          <p class="text-gray-300">Focused on improving Natural Language Understanding by creating training data and exploring techniques to handle query variations.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-vial"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">4. Prototyping</h3>
+          <p class="text-gray-300">Developed a basic prototype in Google Colab to test the corpus and initial NLU capabilities with sample student queries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">Results & Learnings</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">Key Outcomes</h3>
+          <p class="text-gray-300 mb-4">
+            The primary outcome was a well-structured, domain-specific corpus that serves as the knowledge backbone for the academic chatbot. This foundational work successfully enables the system to recognize a variety of student intents and extract key entities from their questions, paving the way for a more advanced dialogue management system.
+          </p>
+          <h3 class="text-2xl font-bold text-white mb-3">Lessons Learned</h3>
+          <p class="text-gray-300">
+            This project highlighted that the quality of a chatbot is heavily dependent on the quality and structure of its corpus. I learned the critical importance of meticulous data collection and annotation for training a reliable NLU model. It also provided practical experience in the iterative process of defining intents and entities to cover a specific domain effectively.
+          </p>
+        </div>
+        <div>
+          <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus3.png"
+               onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\corpus3.png';"
+               alt="A picture showing how the corpus recognizes intents and entities"
+               class="rounded-lg shadow-xl w-full">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+      <p>&copy; 2025 Ainur Rahma Miftakhul Rizqi. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

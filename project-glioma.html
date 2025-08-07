@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail - Glioma Grading Feature Selection</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #E5E7EB;
+    }
+    .font-anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .content-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <header class="py-6">
+    <div class="container mx-auto px-6">
+      <a href="index.html" class="text-sky-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8">
+
+    <!-- Project Title -->
+    <section class="text-center mb-16">
+      <h1 class="font-anton text-5xl md:text-7xl text-white tracking-tighter">Multi-Strategy Feature Selection for Glioma Grading</h1>
+      <p class="text-gray-300 text-xl mt-2">Using Classical and Deep Models</p>
+    </section>
+
+    <!-- Overview -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+      <div class="lg:col-span-2 content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Project Summary</h2>
+        <p class="text-gray-300">
+          This research proposed a novel multi-strategy feature selection pipeline that combines classical methods (like statistical tests) with deep learning models to enhance the performance of glioma grading from medical imaging data. We evaluated multiple classifiers on both the original imbalanced dataset and a balanced dataset created using SMOTE, providing comprehensive metric comparisons to validate the effectiveness of our approach. This work is currently under review for publication.
+        </p>
+      </div>
+      <div class="content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Key Information</h2>
+        <ul class="text-gray-300 space-y-3">
+          <li><strong><i class="fas fa-user-tie w-6"></i> Role:</strong> First Author, Researcher</li>
+          <li><strong><i class="fas fa-tools w-6"></i> Tools:</strong> Python, Scikit-learn, Deep Learning, SMOTE</li>
+          <li><strong><i class="fas fa-info-circle w-6"></i> Status:</strong> Under Review</li>
+          <li><strong><i class="fas fa-users w-6"></i> Authors:</strong> A. R. M. Rizqi, et al.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <!-- <section class="mb-16">
+      <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (1).png"
+           onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (1).png';"
+           alt="A diagram illustrating the multi-strategy feature selection pipeline for glioma grading"
+           class="rounded-lg shadow-2xl w-full">
+    </section> -->
+
+    <!-- Process -->
+    <section class="mb-16 content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">The Research Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-layer-group"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">1. Feature Engineering</h3>
+          <p class="text-gray-300">Extracted a wide range of features from glioma medical images using both classical and deep learning-based techniques.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-sitemap"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">2. Multi-Strategy Selection</h3>
+          <p class="text-gray-300">Designed and implemented a pipeline to select the most informative features by combining the strengths of different selection methods.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-balance-scale"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">3. Data Balancing</h3>
+          <p class="text-gray-300">Applied the SMOTE (Synthetic Minority Over-sampling Technique) to address class imbalance in the dataset, creating a balanced version for training.</p>
+        </div>
+        <div>
+          <div class="text-4xl text-sky-400 mb-2"><i class="fas fa-chart-line"></i></div>
+          <h3 class="text-xl font-bold text-white mb-2">4. Comparative Evaluation</h3>
+          <p class="text-gray-300">Trained and evaluated multiple classifiers (e.g., SVM, Random Forest) on both imbalanced and balanced data, comparing performance with comprehensive metrics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">Results & Learnings</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">Key Outcomes</h3>
+          <p class="text-gray-300 mb-4">
+            The proposed multi-strategy feature selection pipeline demonstrated a significant improvement in glioma grading accuracy compared to using single strategies. The results confirmed that combining classical and deep features, along with proper data balancing, leads to more robust and reliable classification models in medical imaging.
+          </p>
+          <h3 class="text-2xl font-bold text-white mb-3">Lessons Learned</h3>
+          <p class="text-gray-300">
+            This research provided deep insights into the challenges of working with high-dimensional and imbalanced medical datasets. I learned that an intelligent feature selection process is paramount for building effective diagnostic models. It also reinforced the value of a comprehensive evaluation framework to rigorously validate research findings.
+          </p>
+        </div>
+        <div>
+          <img src="D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (2).png"
+               onerror="this.onerror=null;this.src='https:D:\KULIAH MIFTA\berkas magang\Portofolio\images\glioma (2).png';"
+               alt="A bar chart comparing the performance metrics of different models"
+               class="rounded-lg shadow-xl w-full">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+      <p>&copy; 2025 Ainur Rahma Miftakhul Rizqi. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
