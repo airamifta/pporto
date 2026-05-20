@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail - Docker Compose Data Engineering</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #111827;
+      color: #E5E7EB;
+    }
+    .font-anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .content-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <header class="py-6">
+    <div class="container mx-auto px-6">
+      <a href="index.html" class="text-sky-400 hover:text-white transition-colors">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-8 max-w-5xl">
+
+    <section class="text-center mb-12">
+      <h1 class="font-anton text-4xl md:text-6xl text-white tracking-tighter">Docker Compose Data Engineering</h1>
+      <p class="text-gray-300 text-xl mt-2">Data Infrastructure & Pipeline Orchestration Environment</p>
+    </section>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+      <div class="lg:col-span-2 content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Project Summary</h2>
+        <p class="text-gray-300 leading-relaxed">
+          This project focuses on designing and implementing a containerized, robust, and scalable environment tailored for modern Data Engineering workflows using Docker Compose. The setup seamlessly integrates essential components of the modern data stack—including database systems, workflow orchestration engines, and data lakes. It provides a standardized, portable environment that simplifies pipeline development, testing, and scaling without manual multi-tool dependency issues.
+        </p>
+      </div>
+      <div class="content-card">
+        <h2 class="text-2xl font-bold text-white mb-4">Key Information</h2>
+        <ul class="text-gray-300 space-y-3">
+          <li><strong><i class="fas fa-user-tie w-6 text-sky-400"></i> Role:</strong> Data Engineer / Infrastructure</li>
+          <li><strong><i class="fas fa-tools w-6 text-sky-400"></i> Tools:</strong> Docker, Docker Compose, Linux, YAML</li>
+          <li><strong><i class="fas fa-calendar-alt w-6 text-sky-400"></i> Duration:</strong> 2026</li>
+          <li><strong><i class="fas fa-code w-6 text-sky-400"></i> Source Code:</strong> 
+            <a href="https://github.com/airamifta/Docker-Compose-DataEngineering" class="text-sky-400 hover:underline" target="_blank">GitHub</a>
+          </li>  
+        </ul>
+      </div>
+    </div>
+
+    <section class="mb-12 content-card">
+      <h2 class="text-3xl font-bold text-white mb-8 text-center">The Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+        <div class="border-l-4 border-sky-400 pl-4">
+          <h3 class="text-xl font-bold text-white mb-2">1. Architecture Design</h3>
+          <p class="text-gray-400 text-sm">Mapping out the required data stacks (Orchestrator, Data Warehouses, Transactional DBs) and determining how containers communicate safely inside the network.</p>
+        </div>
+        <div class="border-l-4 border-sky-400 pl-4">
+          <h3 class="text-xl font-bold text-white mb-2">2. Network & Volume</h3>
+          <p class="text-gray-400 text-sm">Configuring dedicated Docker networks for secure inter-container isolation and implementing persistent volumes to ensure data integrity during container restarts.</p>
+        </div>
+        <div class="border-l-4 border-sky-400 pl-4">
+          <h3 class="text-xl font-bold text-white mb-2">3. Compose Optimization</h3>
+          <p class="text-gray-400 text-sm">Writing modular YAML files using environment variables (`.env`) for secrets management, and implementing proper service startup dependencies using `depends_on` conditions.</p>
+        </div>
+        <div class="border-l-4 border-sky-400 pl-4">
+          <h3 class="text-xl font-bold text-white mb-2">4. Testing & Validation</h3>
+          <p class="text-gray-400 text-sm">Executing healthchecks for critical storage layers, and deploying a sample end-to-end ETL pipeline to test configuration reliability and resource utilization limits.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center">Results & Learnings</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-bold text-sky-400 mb-2">Key Outcomes</h3>
+          <p class="text-gray-300 leading-relaxed">
+            The project delivered a production-ready, localized multi-service data environment that can be launched with a single command: <code class="bg-gray-900 px-2 py-1 rounded text-sm text-pink-400 font-mono">docker compose up -d</code>. By standardizing configurations, it eliminates the "it works on my machine" problem, reducing environment provisioning time from hours to just minutes for data professionals.
+          </p>
+        </div>
+        <hr class="border-gray-700">
+        <div>
+          <h3 class="text-2xl font-bold text-sky-400 mb-2">Lessons Learned</h3>
+          <p class="text-gray-300 leading-relaxed">
+            Building this project deepened my understanding of infrastructure-as-code principles. I learned the critical importance of container healthchecks—ensuring an orchestrator like Airflow doesn't boot up before the metadata database is ready. Managing compute resources and correctly scoping volume permissions were also pivotal takeaways.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+      <p>&copy; 2026 Ainur Rahma Miftakhul Rizqi. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
